@@ -1,0 +1,117 @@
+@import url(./vars.css);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Title */
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: .1fr .1fr;
+  width: 100%;
+}
+
+.title-container {
+  margin-top: 4rem;;
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 100%;
+
+}
+
+.hero-title {
+  font-family: var(--ff-main);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bd);
+}
+
+/* Destinations */
+
+.destinations-container {
+  display: grid;
+  gap: 0.5rem;;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-left: 5%; /* 5%*/
+  padding-right: 5%; /* 5%*/
+  padding-bottom: 1%;
+}
+
+.destination {
+  background-color: var(--clr-white);
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  box-shadow: 0.5em 0.5em 0.5rem var(--clr-black-shadow);
+  color: var(--clr-purple);
+  display: grid;
+  
+  grid-template-columns: 1fr;
+  grid-template-rows: .1fr .1fr;
+  margin: 2rem;
+
+  text-align: center;
+}
+/* Aqui tengo la duda*/
+.destination-image {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  width: 100%;
+  padding: 0;
+}
+
+.destination-text-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+
+
+.destination-title {
+  font-family: var(--ff-main);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-md);
+  margin: 0.9rem;;
+  text-align: left;
+}
+
+.destination-price {
+  font-family: var(--ff-main);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-md);
+  margin: 0.9rem;;
+  text-align: right;
+}
+
+.destination-time-container {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.destination-icon {
+  margin: .7rem;
+  
+  overflow: clip;
+}
+
+.destination-time {
+  font-family: var(--ff-main);
+  font-size: var(--fs-nm);
+  font-weight: var(--fw-md);
+  margin: 0.4rem;
+  text-align: left;
+}
+
+/*Landscape phone - less than 768px*/
+@media (max-width: 767.98px) {
+  .destinations-container {
+    grid-template-columns: 1fr;
+  }
+
+}
